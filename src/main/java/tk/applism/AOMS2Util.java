@@ -15,6 +15,7 @@ public class AOMS2Util extends JavaPlugin implements Listener{
     public void onEnable() {
         getLogger().info("Applism Origin Minecraft Server Two Utils Plugin has been enabled!");
         getServer().getPluginManager().registerEvents(this, this);
+        this.getCommand("a2utils").setExecutor(new A2Utils());
     }
     @Override
     public void onDisable() {
